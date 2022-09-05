@@ -1,0 +1,1177 @@
+{
+  "baseInformation": {
+    "slug": "baseInformation",
+    "name": {
+      "ukraine": "Основна інформація",
+      "english": "Basic information",
+      "russian": "Основная информация"
+    },
+    "questions": {
+      "heading": {
+        "propertySet": 0,
+        "slug": "heading",
+        "type": "select",
+        "showName": true,
+        "relateProperty": 0,
+        "name": {
+          "ukraine": "Рубрика",
+          "english": "Heading",
+          "russian": "Рубрика"
+        },
+        "properties": {
+          "flat": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "flat",
+            "position": 1,
+            "name": {
+              "ukraine": "Квартира",
+              "english": "Flat",
+              "russian": "Квартира"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          },
+          "house": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "house",
+            "position": 2,
+            "name": {
+              "ukraine": "Будинок",
+              "english": "House",
+              "russian": "Дом"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          }
+        }
+      },
+      "actionType": {
+        "propertySet": 0,
+        "slug": "actionType",
+        "type": "select",
+        "showName": false,
+        "relateProperty": 0,
+        "name": {
+          "ukraine": "Дія",
+          "english": "Action",
+          "russian": "Действие"
+        },
+        "properties": {
+          "sale": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "sale",
+            "position": 1,
+            "name": {
+              "ukraine": "Продаж",
+              "english": "Sale",
+              "russian": "Продажа"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          },
+          "rent": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "rent",
+            "position": 2,
+            "name": {
+              "ukraine": "Оренда",
+              "english": "Rent",
+              "russian": "Аренда"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          }
+        }
+      },
+      "displayOnTheMap": {
+        "propertySet": 0,
+        "slug": "displayOnTheMap",
+        "type": "radio",
+        "showName": true,
+        "relateProperty": 0,
+        "name": {
+          "ukraine": "Відображення на карті",
+          "english": "Display on the map",
+          "russian": "Отображение на карте"
+        },
+        "properties": {
+          "exact": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "exact",
+            "position": 1,
+            "name": {
+              "ukraine": "Точне",
+              "english": "Exact",
+              "russian": "Точное"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          },
+          "radius": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "radius",
+            "position": 2,
+            "name": {
+              "ukraine": "Радіус",
+              "english": "Radius",
+              "russian": "Радиус"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          }
+        }
+      }
+    }
+  },
+  "propertyFeatures": {
+    "slug": "propertyFeatures",
+    "name": {
+      "ukraine": "Характеристики нерухомості",
+      "english": "Property features",
+      "russian": "Характеристики недвижимости"
+    },
+    "questions": {
+      "housingType": {
+        "propertySet": 0,
+        "slug": "housingType",
+        "type": "radio",
+        "showName": true,
+        "relateProperty": 0,
+        "name": {
+          "ukraine": "Тип житла",
+          "english": "Housing type",
+          "russian": "Тип жилья"
+        },
+        "properties": {
+          "resellers": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "resellers",
+            "position": 1,
+            "name": {
+              "ukraine": "Вторинне житло",
+              "english": "Resellers",
+              "russian": "Вторичное жилье"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          },
+          "newBuilding": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "newBuilding",
+            "position": 2,
+            "name": {
+              "ukraine": "Новобуд",
+              "english": "New building",
+              "russian": "Новострой"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          }
+        }
+      },
+      "numberOfRooms": {
+        "propertySet": 0,
+        "slug": "numberOfRooms",
+        "type": "number",
+        "showName": true,
+        "relateProperty": 0,
+        "name": {
+          "ukraine": "Кількість кімнат",
+          "english": "Number of rooms",
+          "russian": "Количество комнат"
+        },
+        "properties": {}
+      },
+      "wallType": {
+        "propertySet": 0,
+        "slug": "wallType",
+        "type": "select",
+        "showName": true,
+        "relateProperty": 0,
+        "name": {
+          "ukraine": "Тип стін",
+          "english": "Wall type",
+          "russian": "Тип стен"
+        },
+        "properties": {
+          "brick": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "brick",
+            "position": 1,
+            "name": {
+              "ukraine": "Цегла",
+              "english": "Brick",
+              "russian": "Кирпич"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          },
+          "wood": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "wood",
+            "position": 2,
+            "name": {
+              "ukraine": "Дерево",
+              "english": "Wood",
+              "russian": "Дерево"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          }
+        }
+      },
+      "yearOfConstruction": {
+        "propertySet": 0,
+        "slug": "yearOfConstruction",
+        "type": "select",
+        "showName": true,
+        "relateProperty": 0,
+        "name": {
+          "ukraine": "Рік будівництва",
+          "english": "Year of construction",
+          "russian": "Год постройки"
+        },
+        "properties": {
+          "2022": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "2022",
+            "position": 2,
+            "name": {
+              "ukraine": "2022",
+              "english": "2022",
+              "russian": "2022"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          },
+          "notSpecified": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "notSpecified",
+            "position": 1,
+            "name": {
+              "ukraine": "Не вказано",
+              "english": "Not specified",
+              "russian": "Не указано"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          }
+        }
+      },
+      "general": {
+        "propertySet": 0,
+        "slug": "general",
+        "type": "number",
+        "showName": true,
+        "relateProperty": 0,
+        "name": {
+          "ukraine": "Загальна",
+          "english": "General",
+          "russian": "Общая"
+        },
+        "properties": {}
+      },
+      "residential": {
+        "propertySet": 0,
+        "slug": "residential",
+        "type": "number",
+        "showName": true,
+        "relateProperty": 0,
+        "name": {
+          "ukraine": "Житлова",
+          "english": "Residential",
+          "russian": "Жилая"
+        },
+        "properties": {}
+      },
+      "kitchen": {
+        "propertySet": 0,
+        "slug": "kitchen",
+        "type": "number",
+        "showName": true,
+        "relateProperty": 0,
+        "name": {
+          "ukraine": "Кухня",
+          "english": "Kitchen",
+          "russian": "Кухня"
+        },
+        "properties": {}
+      },
+      "numberOfStoreys": {
+        "propertySet": 0,
+        "slug": "numberOfStoreys",
+        "type": "number",
+        "showName": true,
+        "relateProperty": 0,
+        "name": {
+          "ukraine": "Поверховість",
+          "english": "Number of storeys",
+          "russian": "Этажность"
+        },
+        "properties": {}
+      },
+      "floor": {
+        "propertySet": 0,
+        "slug": "floor",
+        "type": "select",
+        "showName": true,
+        "relateProperty": 0,
+        "name": {
+          "ukraine": "Поверх",
+          "english": "Floor",
+          "russian": "Этаж"
+        },
+        "properties": {
+          "basement": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "basement",
+            "position": 1,
+            "name": {
+              "ukraine": "Цокольний",
+              "english": "Basement",
+              "russian": "Цокольный"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          },
+          "first": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "first",
+            "position": 2,
+            "name": {
+              "ukraine": "Перший",
+              "english": "The first",
+              "russian": "Первый"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          },
+          "second": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "second",
+            "position": 3,
+            "name": {
+              "ukraine": "Другий",
+              "english": "Second",
+              "russian": "Второй"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          },
+          "third": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "third",
+            "position": 4,
+            "name": {
+              "ukraine": "Третій",
+              "english": "Third",
+              "russian": "Третий"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          }
+        }
+      },
+      "heating": {
+        "propertySet": 0,
+        "slug": "heating",
+        "type": "radio",
+        "showName": true,
+        "relateProperty": 0,
+        "name": {
+          "ukraine": "Опалення",
+          "english": "Heating",
+          "russian": "Отопление"
+        },
+        "properties": {
+          "centralized": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "centralized",
+            "position": 1,
+            "name": {
+              "ukraine": "Централізоване",
+              "english": "Centralized",
+              "russian": "Централизованное"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          },
+          "individual": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "individual",
+            "position": 2,
+            "name": {
+              "ukraine": "Індивідуальне",
+              "english": "Individual",
+              "russian": "Индивидуальное"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          },
+          "withoutHeating": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "withoutHeating",
+            "position": 3,
+            "name": {
+              "ukraine": "Без опалення",
+              "english": "Without heating",
+              "russian": "Без отопления"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          }
+        }
+      },
+      "layoutFeatures": {
+        "propertySet": 0,
+        "slug": "layoutFeatures",
+        "type": "multiple_select",
+        "showName": true,
+        "relateProperty": 0,
+        "name": {
+          "ukraine": "Особливості планування",
+          "english": "Layout features",
+          "russian": "Особенности планировки"
+        },
+        "properties": {
+          "multilevel": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "multilevel",
+            "position": 1,
+            "name": {
+              "ukraine": "Багаторівнева",
+              "english": "Multilevel",
+              "russian": "Многоуровневая"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          },
+          "kitchenStudio": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "kitchenStudio",
+            "position": 2,
+            "name": {
+              "ukraine": "Кухня-студія",
+              "english": "Kitchen-studio",
+              "russian": "Кухня-студия"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          },
+          "withAttic": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "withAttic",
+            "position": 3,
+            "name": {
+              "ukraine": "З мансардою",
+              "english": "With attic",
+              "russian": "С мансардой"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          },
+          "separateRooms": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "resellers",
+            "position": 4,
+            "name": {
+              "ukraine": "Окремі кімнати",
+              "english": "Separate rooms",
+              "russian": "Раздельные комнаты"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          },
+          "connectingRooms": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "connectingRooms",
+            "position": 5,
+            "name": {
+              "ukraine": "Суміжні кімнати",
+              "english": "Connecting rooms",
+              "russian": "Смежные комнаты"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          },
+          "penthouse": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "penthouse",
+            "position": 6,
+            "name": {
+              "ukraine": "Пентхаус",
+              "english": "Penthouse",
+              "russian": "Пентхаус"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          },
+          "roughFinish": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "roughFinish",
+            "position": 7,
+            "name": {
+              "ukraine": "Чорнова обробка",
+              "english": "Rough finish",
+              "russian": "Черновая отделка"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          }
+        }
+      },
+      "propertyCondition": {
+        "propertySet": 0,
+        "slug": "propertyCondition",
+        "type": "radio",
+        "showName": true,
+        "relateProperty": 0,
+        "name": {
+          "ukraine": "Стан нерухомості",
+          "english": "Property condition",
+          "russian": "Состояние недвижки"
+        },
+        "properties": {
+          "authorsDesign": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "authorsDesign",
+            "position": 1,
+            "name": {
+              "ukraine": "Авторський дизайн",
+              "english": "Author's design",
+              "russian": "Авторский дизайн"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          },
+          "euroRepair": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "euroRepair",
+            "position": 2,
+            "name": {
+              "ukraine": "Євро ремонт",
+              "english": "Euro repair",
+              "russian": "Евро ремонт"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          },
+          "redecorating": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "redecorating",
+            "position": 3,
+            "name": {
+              "ukraine": "Косметичний ремонт",
+              "english": "Redecorating",
+              "russian": "Косметический ремонт"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          },
+          "withoutRepair": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "withoutRepair",
+            "position": 4,
+            "name": {
+              "ukraine": "Без ремонту",
+              "english": "Without repair",
+              "russian": "Без ремонта"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          },
+          "afterBuilders": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "afterBuilders",
+            "position": 5,
+            "name": {
+              "ukraine": "Після будівельників",
+              "english": "After builders",
+              "russian": "После строителей"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          }
+        }
+      }
+    }
+  },
+  "cost": {
+    "slug": "cost",
+    "name": {
+      "ukraine": "Вартість",
+      "english": "Price",
+      "russian": "Стоимость"
+    },
+    "questions": {
+      "price": {
+        "propertySet": 0,
+        "slug": "price",
+        "type": "number",
+        "showName": true,
+        "relateProperty": 0,
+        "name": {
+          "ukraine": "Ціна",
+          "english": "Price",
+          "russian": "Цена"
+        },
+        "properties": {}
+      },
+      "currency": {
+        "propertySet": 0,
+        "slug": "currency",
+        "type": "select",
+        "showName": false,
+        "relateProperty": 0,
+        "name": {
+          "ukraine": "Валюта",
+          "english": "Currency",
+          "russian": "Валюта"
+        },
+        "properties": {
+          "dollar": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "dollar",
+            "position": 1,
+            "name": {
+              "ukraine": "Долар ($)",
+              "english": "Dollar ($)",
+              "russian": "Доллар ($)"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          },
+          "hryvnia": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "hryvnia",
+            "position": 1,
+            "name": {
+              "ukraine": "Гривня (₴)",
+              "english": "Hryvnia (₴)",
+              "russian": "Гривна (₴)"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          }
+        }
+      },
+      "pricePer": {
+        "propertySet": 0,
+        "slug": "pricePer",
+        "type": "radio",
+        "showName": true,
+        "relateProperty": 0,
+        "name": {
+          "ukraine": "Ціна за",
+          "english": "Price per",
+          "russian": "Цена за"
+        },
+        "properties": {
+          "perSquareMeter": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "perSquareMeter",
+            "position": 1,
+            "name": {
+              "ukraine": "За квадратний метр",
+              "english": "Per square meter",
+              "russian": "За квадратный метр"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          },
+          "perObject": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "perObject",
+            "position": 1,
+            "name": {
+              "ukraine": "За об'єкт",
+              "english": "Per object",
+              "russian": "За объект"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          }
+        }
+      },
+      "bargain": {
+        "propertySet": 0,
+        "slug": "bargain",
+        "type": "checkbox",
+        "showName": true,
+        "relateProperty": 0,
+        "name": {
+          "ukraine": "Торг",
+          "english": "Bargain",
+          "russian": "Торг"
+        },
+        "properties": {
+          "bargainingPossible": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "bargainingPossible",
+            "position": 1,
+            "name": {
+              "ukraine": "Можливий торг",
+              "english": "Bargaining possible",
+              "russian": "Возможен торг"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          }
+        }
+      },
+      "exchangeIsPossible": {
+        "propertySet": 0,
+        "slug": "exchangeIsPossible",
+        "type": "select",
+        "showName": true,
+        "relateProperty": 0,
+        "name": {
+          "ukraine": "Можливий обмін",
+          "english": "Exchange is possible",
+          "russian": "Возможен обмен"
+        },
+        "properties": {
+          "yes": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "yes",
+            "position": 1,
+            "name": {
+              "ukraine": "Так",
+              "english": "Yes",
+              "russian": "Да"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          },
+          "no": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "no",
+            "position": 2,
+            "name": {
+              "ukraine": "Ні",
+              "english": "No",
+              "russian": "Нет"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          }
+        }
+      },
+      "mortgage": {
+        "propertySet": 0,
+        "slug": "mortgage",
+        "type": "checkbox",
+        "showName": true,
+        "relateProperty": 0,
+        "name": {
+          "ukraine": "Іпотека",
+          "english": "Mortgage",
+          "russian": "Ипотека"
+        },
+        "properties": {
+          "possibleMortgage": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "possibleMortgage",
+            "position": 1,
+            "name": {
+              "ukraine": "Можлива іпотека",
+              "english": "Possible mortgage",
+              "russian": "Возможна ипотека"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          }
+        }
+      }
+    }
+  },
+  "photosAndVideos": {
+    "slug": "photosAndVideos",
+    "name": {
+      "ukraine": "Фото і відео",
+      "english": "Photo and video",
+      "russian": "Фото и видео"
+    },
+    "questions": {}
+  },
+  "objectDescription": {
+    "slug": "objectDescription",
+    "name": {
+      "ukraine": "Опис об'єкту",
+      "english": "Description of the object",
+      "russian": "Описание объекта"
+    }
+  },
+  "additionalObjectCharacteristics": {
+    "slug": "additionalObjectCharacteristics",
+    "name": {
+      "ukraine": "Додаткові характеристики об'єкту",
+      "english": "Additional characteristics of the object",
+      "russian": "Дополнительные характеристики объекта"
+    },
+    "questions": {
+      "layoutFeatures": {
+        "propertySet": 0,
+        "slug": "layoutFeatures",
+        "type": "multiple_select",
+        "showName": true,
+        "relateProperty": 0,
+        "name": {
+          "ukraine": "Особливості планування",
+          "english": "Layout features",
+          "russian": "Особенности планировки"
+        },
+        "properties": {
+          "profitablePrice": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "profitablePrice",
+            "position": 1,
+            "name": {
+              "ukraine": "Вигідна ціна",
+              "english": "Profitable price",
+              "russian": "Выгодная цена"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          },
+          "operationalDisplay": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "operationalDisplay",
+            "position": 2,
+            "name": {
+              "ukraine": "Оперативний показ",
+              "english": "Operational display",
+              "russian": "Оперативный показ"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          },
+          "urgently": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "urgently",
+            "position": 3,
+            "name": {
+              "ukraine": "Терміново",
+              "english": "Urgently",
+              "russian": "Срочно"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          },
+          "quietArea": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "quietArea",
+            "position": 4,
+            "name": {
+              "ukraine": "Спокійний район",
+              "english": "Quiet area",
+              "russian": "Спокойный район"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          },
+          "withFurniture": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "withFurniture",
+            "position": 5,
+            "name": {
+              "ukraine": "З меблями",
+              "english": "With furniture",
+              "russian": "С мебелью"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          },
+          "inTheCenter": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "inTheCenter",
+            "position": 6,
+            "name": {
+              "ukraine": "У центрі",
+              "english": "In the center",
+              "russian": "В центре"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          },
+          "newRenovation": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "newRenovation",
+            "position": 7,
+            "name": {
+              "ukraine": "Новий ремонт",
+              "english": "New renovation",
+              "russian": "Новый ремонт"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          },
+          "renovation": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "renovation",
+            "position": 8,
+            "name": {
+              "ukraine": "Євроремонт",
+              "english": "Renovation",
+              "russian": "Евроремонт"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          },
+          "quietCourtyard": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "quietCourtyard",
+            "position": 9,
+            "name": {
+              "ukraine": "Тихий двір",
+              "english": "Quiet courtyard",
+              "russian": "Тихий двор"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          },
+          "goodNeighbors": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "goodNeighbors",
+            "position": 10,
+            "name": {
+              "ukraine": "Хороші сусіди",
+              "english": "Good neighbors",
+              "russian": "Хорошие соседи"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          },
+          "beautifulLandscape": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "beautifulLandscape",
+            "position": 11,
+            "name": {
+              "ukraine": "Гарний краєвид",
+              "english": "Beautiful landscape",
+              "russian": "Красивый пейзаж"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          },
+          "highCeilings": {
+            "id": 0,
+            "questionId": 0,
+            "slug": "highCeilings",
+            "position": 12,
+            "name": {
+              "ukraine": "Високі стелі",
+              "english": "High ceilings",
+              "russian": "Высокие потолки"
+            },
+            "value": {
+              "ukraine": "",
+              "english": "",
+              "russian": ""
+            }
+          }
+        }
+      }
+    }
+  }
+}

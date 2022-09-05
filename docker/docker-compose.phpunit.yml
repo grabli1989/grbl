@@ -1,0 +1,23 @@
+version: '3.5'
+
+services:
+
+  ### PHP-CLI ##############################################
+  php-cli:
+    container_name: php-cli
+    tty: true
+    volumes:
+      - ${APP_CODE_PATH_HOST}:${APP_CODE_PATH_CONTAINER}${APP_CODE_CONTAINER_FLAG}
+    build:
+      context: ./..
+      dockerfile: ./docker/php-cli/Dockerfile
+      args:
+        - APP_ENV=${APP_ENV}
+        - PROJECT_PHP_VERSION=${PHP_VERSION}
+        - PUID=${PHP_FPM_PUID}
+        - PGID=${PHP_FPM_PGID}
+        - CODE_PATH_CONTAINER=${APP_CODE_PATH_CONTAINER}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      - PHP_IDE_CONFIG=${PHP_IDE_CONFIG}

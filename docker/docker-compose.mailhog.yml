@@ -1,0 +1,23 @@
+version: '3.5'
+
+services:
+
+### Mailhog ################################################
+  mailhog:
+    build: ./mailhog
+    restart: unless-stopped
+    ports:
+      - "1025:1025"
+      - "8025:8025"
+    networks:
+      - frontend
+      - backend
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=frontend"
+      - "traefik.backend=mailhog"
+
+      - "traefik.http.routers.smtp-http.entrypoints=https"
+      - "traefik.http.routers.smtp-http.rule=Host(`mailhog.loc`)"
+      - "traefik.http.routers.smtp-http.tls=true"
+      - "traefik.http.services.smtp-http.loadbalancer.server.port=8025"

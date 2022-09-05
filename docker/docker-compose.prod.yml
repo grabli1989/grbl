@@ -1,0 +1,44 @@
+version: '3.5'
+
+services:
+
+    ### phpMyAdmin ###########################################
+    phpmyadmin:
+      environment:
+        - PMA_ABSOLUTE_URI=https://${PMA_ADDRESS}
+        - PMA_HOST=mysql
+        - MAX_EXECUTION_TIME=${PMA_MAX_EXECUTION_TIME}
+        - MEMORY_LIMIT=${PMA_MEMORY_LIMIT}
+        - UPLOAD_LIMIT=${PMA_UPLOAD_LIMIT}
+        - PMA_ARBITRARY=1
+        - MYSQL_ROOT_PASSWORD=${PMA_ROOT_PASSWORD}
+      labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.pma-${COMPOSE_PROJECT_NAME}.entrypoints=https"
+        - "traefik.http.routers.pma-${COMPOSE_PROJECT_NAME}.rule=Host(`${PMA_ADDRESS}`)"
+        - "traefik.http.routers.pma-${COMPOSE_PROJECT_NAME}.tls=true"
+        - "traefik.http.routers.pma-${COMPOSE_PROJECT_NAME}.tls.certresolver=letsEncrypt"
+        - "traefik.http.middlewares.pma-${COMPOSE_PROJECT_NAME}-compress.compress=true"
+        - "traefik.http.routers.pma-${COMPOSE_PROJECT_NAME}.middlewares=pma-${COMPOSE_PROJECT_NAME}-compress"
+        - "traefik.http.services.pma-${COMPOSE_PROJECT_NAME}.loadbalancer.server.port=80"
+        - "traefik.docker.network=frontend"
+        - "traefik.backend=phpmyadmin"
+
+    ### REDISWEBUI ################################################
+    redis-webui:
+      environment:
+        - ADMIN_USER=${REDIS_WEBUI_USERNAME}
+        - ADMIN_PASS=${REDIS_WEBUI_PASSWORD}
+        - REDIS_1_HOST=${REDIS_WEBUI_CONNECT_HOST}
+        - REDIS_1_PORT=${REDIS_WEBUI_CONNECT_PORT}
+      labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.redis-${COMPOSE_PROJECT_NAME}.entrypoints=https"
+        - "traefik.http.routers.redis-${COMPOSE_PROJECT_NAME}.rule=Host(`${REDIS_WEBUI_ADDRESS}`)"
+        - "traefik.http.routers.redis-${COMPOSE_PROJECT_NAME}.tls=true"
+        - "traefik.http.routers.redis-${COMPOSE_PROJECT_NAME}.tls.certresolver=letsEncrypt"
+        - "traefik.http.middlewares.redis-${COMPOSE_PROJECT_NAME}-compress.compress=true"
+        - "traefik.http.routers.redis-${COMPOSE_PROJECT_NAME}.middlewares=redis-${COMPOSE_PROJECT_NAME}-compress"
+        - "traefik.http.services.redis-${COMPOSE_PROJECT_NAME}.loadbalancer.server.port=80"
+        - "traefik.docker.network=frontend"
+        - "traefik.backend=redis-webui"
